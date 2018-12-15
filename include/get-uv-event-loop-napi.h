@@ -4,10 +4,6 @@
 #include <assert.h>
 #include <node_api.h>
 
-#if !defined(NAPI_VERSION) || NAPI_VERSION < 2
-#include <get-symbol-from-current-process.h>
-#endif
-
 inline
 uv_loop_t* get_uv_event_loop(napi_env env) {
   typedef napi_status (*get_uv_event_loop_fn)(napi_env env, uv_loop_t** loop);
