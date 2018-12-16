@@ -15,5 +15,8 @@
     "type": "git",
     "url": "git://github.com/node-ffi-napi/get-uv-event-loop-napi-h.git"
   },
+  "dependencies": {
+    "get-symbol-from-current-process-h": "^1.0.1"
+  },
   "main": "get-paths.js"
 }
